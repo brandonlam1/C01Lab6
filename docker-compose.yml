@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile_backend
       target: backend
+    image: brandonlam1/quirknotes_backend:latest
     ports:
       - "4000:4000"
     environment:
