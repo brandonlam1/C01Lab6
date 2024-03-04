@@ -6,9 +6,11 @@ services:
       target: frontend
     image: brandonlam1/quirknotes_frontend:latest
     ports:
-      - "3000:3000"
+      - "3000:80"
     environment:
       - ENV=Docker
+    depends_on:
+      - backend
     
   backend:
     build:
